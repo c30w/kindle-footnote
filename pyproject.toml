@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kindle-footnote"
+version = "1.0.0"
+description = "把 EPUB 里的弹窗脚注改成正文内嵌注释，推送到 Kindle 后不用点、不弹窗"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "c30w", email = "wjw1874@gmail.com" }]
+keywords = ["kindle", "epub", "footnote", "footnotes", "ebook", "kfx", "reading"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Text Processing :: Markup :: XML",
+    "Topic :: Utilities",
+]
+dependencies = ["lxml>=4.6,<6"]
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+kindle-footnote = "epub_footnote_inline:main"
+
+[project.urls]
+Homepage = "https://github.com/c30w/kindle-footnote"
+Issues = "https://github.com/c30w/kindle-footnote/issues"
+
+[tool.setuptools]
+py-modules = ["epub_footnote_inline"]

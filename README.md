@@ -36,6 +36,13 @@ pip install lxml
 python epub_footnote_inline.py 书.epub --style tight --class-fallback
 ```
 
+也可以装成命令行工具，之后直接 `kindle-footnote` 调用：
+
+```bash
+pip install git+https://github.com/c30w/kindle-footnote.git
+kindle-footnote 书.epub --style tight --class-fallback
+```
+
 参数说明见下面「方法 B（命令行）」。
 
 ---
