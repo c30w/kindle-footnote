@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# 本地虚拟环境（首次运行 bat 时自动生成，不上传）
+.venv/
+venv/
+
+# 转换产物（跑测试也会生成 out_*.epub，一并忽略）
+*-tight.epub
+*-compact.epub
+*-loose.epub
+*-inline.epub
+out_*.epub
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

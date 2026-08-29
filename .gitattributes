@@ -1,0 +1,12 @@
+# 批处理文件必须是 CRLF：LF 行尾在 cmd.exe 下会导致 goto / if errorlevel 解析异常
+*.bat text eol=crlf
+
+# 源码与文档统一 LF
+*.py  text eol=lf
+*.sh  text eol=lf
+*.md  text eol=lf
+*.txt text eol=lf
+
+# 二进制，禁止 git 做任何行尾转换或 diff
+*.epub binary
+*.zip binary
